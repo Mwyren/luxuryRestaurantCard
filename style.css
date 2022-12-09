@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Luxurious+Script&display=swap');
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.background{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-size: center;
+}
+
+.container{
+  position: absolute;
+  width: 600px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 12px;
+  border: 5px groove gold;
+}
+
+.image-container img{
+  width: 100%;
+  height: 100%;
+}
+
+.image-container img{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(214, 185, 19);
+  padding: 15px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.description .sign{
+  font-size: 50px;
+  margin: 0;
+}
+
+.description .title{
+  text-align: center;
+  font-family: 'Luxurious Roman', sans-serif;
+}
+
+.description .price{
+  font-size: 20px;
+}
+
+.description .text{
+  text-align: center;
+  font-family: 'Luxurious Script', sans-serif;
+  font-size: 30px;
+}
+
+.rings{
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+.ring{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border-top: 13px solid gold;
+  left: 50%;
+  margin-top: 10px;
+  transform: translateX(-50%) rotateX(110deg);
+}
+
+.fork-svg{
+  position: absolute;
+  width: 300px;
+  right: 50px;
+}
+
+.glass-svg{
+  position: absolute;
+  width: 250px;
+  left: 50px;
+}
+
+@media (max-width: 1250px) {
+  .fork-svg,
+  .glass-svg{
+    width: 180px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .glass-svg,
+  .fork-svg{
+    display: none;
+  }
+}
+
+
+
+
